@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Nav Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="main-body">
+    <ul class="sidebar">
+      <li><a class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul class="navbar">
+      <li><a class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact Us</a></li> 
+    </ul>
+    <ul class="hamburger">
+      <li onclick="showSidebar()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAATElEQVRoge3WsRGAIAADQHQ8NnAApnIANmA9qLWi8C6F/2WqpEspAEDO8Q7ua8xEkV2t10fnM1XkKwYAQJIvlGYAACT5QmkGAAB/tgCJNQwWp4R7vgAAAABJRU5ErkJggg=="></li>
+    </ul>
+    <ul class="hamburger-sidebar" id="hamburger-bar">
+      <li class="close" onclick="javascript:closeSidebar()"><a href="#">Close</a></li>
+      <li><a  href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  <div class="content">
+    <h1>This is vertical navbar</h1>
+    <p>Created by <b>Neeraj Gupta.</b></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

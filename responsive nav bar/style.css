@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding:0;
+}
+ul.navbar {
+  display: none;
+}
+ul.hamburger {
+  display: none;
+}
+ul.hamburger-sidebar {
+  display: none;
+}
+ul.sidebar {
+  display: block;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+ul.sidebar li a {
+  text-decoration:none;
+  color:grey;
+  display: block;
+  font-size: 2vw;
+  padding:10px 20px;
+  user-select: none;
+  -moz-user-select: none;
+}
+ul.sidebar li a.active {
+  background-color: purple;
+  color:white;
+}
+ul.sidebar li a:hover:not(.active) {
+  background-color: rgba(185, 62, 185, 0.979);
+  color: white;
+}
+.content {
+  margin-left: 27%;
+  height: 1000px;
+}
+@media screen and (max-width: 768px) {
+  ul.sidebar {
+    display: none;
+  }
+  ul.navbar {
+    display: block;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    background-color: black;
+    }
+  ul.navbar li a {
+    text-decoration:none;
+    color: grey;
+    display: inline-block;
+    float: left;
+    padding:10px 20px;
+  }
+  ul.navbar li a.active {
+    background-color: purple;
+    color: white;
+  }
+  ul.navbar li a:hover:not(.active) {
+    background-color: rgba(185, 62, 185, 0.979);
+    color: white;
+  }
+  .content {
+    text-align:center;
+    margin-top:100px;
+    width: 100%;
+    margin-left: 0;;
+}
+@media screen and (max-width:425px) {
+  ul.navbar {
+    display: none;
+  }
+  body {
+    background-color: rgba(0,0,0,0.0);
+  }
+  ul.hamburger {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding:10px;
+  }
+  ul.hamburger li {
+    list-style:none;
+    display: inline-block;
+    float: left;
+  
+  }
+  ul.hamburger-sidebar {
+    transition: 0.3s ease-in-out;
+    display: block;
+    width: 0%;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+  }
+  ul.hamburger-sidebar li a {
+    text-decoration:none;
+    color:grey;
+    display: block;
+    font-size: 5vw;
+    padding:10px 20px;
+    user-select: none;
+    -moz-user-select: none;
+  }
+  ul.hamburger-sidebar li:first-child{
+    background-color: purple;
+    color:white;
+    display: block;
+  }
+  ul.hamburger-sidebar li a:hover:not(.active) {
+    background-color: rgba(185, 62, 185, 0.979);
+    color: white;
+  }
+}
