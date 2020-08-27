@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding:0;
+}
+div.month {
+  box-sizing: border-box;
+  width : 60%;
+  margin: auto;
+  background-color: #378C7D;
+  padding:50px 20px;
+  margin-top: 30px;
+  color:#F2F1DF;
+  font-size: 4vw;
+  border-radius:20px 20px 0px 0px;
+  font-family:"montserrat";
+}
+div.month ul {
+  list-style : none;
+}
+div.month ul li.prev { 
+  float: left;
+  user-select:none;
+}
+div.month ul li.next {
+  float: right;
+  user-select:none;
+}
+div.month ul li:nth-child(3) {
+
+  text-align: center;
+  padding:50ps 0px;
+  height: 100%;
+  width:100%;
+}
+
+
+div.weekdays {
+  box-sizing: border-box;
+  background-color: #F2F1DF;
+  width: 60%;
+  font-family: "poppins";
+  margin: auto;
+}
+div.weekdays ul {
+  list-style: none;
+  background-color: #91D9BF;
+}
+div.weekdays ul li {
+  overflow: hidden;
+  display: inline-block;
+  width: 13.7%;
+  text-align: center;
+  padding:20px 0px;
+  color:#010A26;
+  font-weight: bold;
+  user-select:none;
+
+}
+div.days {
+  width: 60%;
+  background-color: #F2F1DF;
+  padding:10px 0px;
+  margin: auto;
+  color:#010A26;
+  font-weight: bold;
+  border-radius: 0px 0px 20px 20px;
+  font-family: "poppins";
+}
+div.days ul {
+  list-style: none;
+}
+div.days ul li {
+  text-align: center;
+  display: inline-block;
+  width:13.7%;
+  padding:15px 0px;
+  border-radius: 10px;
+  user-select:none;
+}
+
+.sunday {
+  color:#F24B59;
+}
+.sunday:hover {
+  background-color: #F24B59;
+  color:#F2F1DF;
+  transition: 0.3s linear;
+  transform: scale(1.1);
+}
+div.days ul li:hover:not(.sunday):not(.disabled){
+  background-color: #010A26;
+  color:#F2F1DF;
+  transition: 0.3s linear;
+  transform: scale(1.2);
+}
+.disabled {
+  color:grey;
+}
+.active {
+  background-color: #010A26;
+  color: #F2F1DF;
+}
+.sundayActive {
+  background-color: #F24B59;
+  color: #F2F1DF;
+}
+@media screen and (max-width:1044px) {
+  div.weekdays ul li {width: 13.1%;}
+}
+@media screen and (max-width:826px) {
+  div.weekdays ul li, div.days ul li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px 0px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
