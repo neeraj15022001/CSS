@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flip Card Effect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="card" id="visa-card">
+    <div class="front">
+      <div class="card-container">
+        <div class="form">
+          <form>
+            <label for="name">Name</label>
+            <input type="text" required>
+            <br>
+            <label for="account_number">Account Number</label>
+            <input type="text" maxlength="16" required>
+            <br>
+          </form>
+        </div>
+        <div class="branding">
+          <img src="mastercard.png" alt="mastercard" width="50px" height="50px">
+          <span>PayPal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="back">
+      <div class="card-container">
+        <form>
+          <label for="security_pin">Security Pin</label>
+          <input type="text" maxlength="3" required>
+        </form>
+        <button>Pay</button>
+       </div>
+    </div>
+  </div>
+    
+</div>
+<button onclick="document.getElementById('visa-card').style.transform = 'rotateY(180deg)'">Enter Pin</button>
+</body>
+</html>
