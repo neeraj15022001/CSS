@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 1000px;
+}
+div.image-conatiner {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.pexels.com/photos/161815/santorini-oia-greece-water-161815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+div.text-container {
+  color: white;
+  padding: 370px 0px;
+  text-align: right;
+}
+div.text-container h1 {
+  font-size: 5vw;
+  position:absolute;
+  right: 20px;
+  top: 170px;
+  font-family: "poppins";
+  user-select:none; 
+}
+div.text-container button {
+  padding: 10px 30px;
+  color: white;
+  font-family: "poppins";
+  background-color: rgba(0, 0, 0, 0);
+  border:1px solid white;
+  border-radius:50px;
+  position: absolute;
+  right: 20px;
+  top: 300px;
+  font-size: 2vw;
+  user-select:none;
+}
+button:hover {
+  transition: 0.5s ease-in-out;
+  transform:scale(1.1 );
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+}
+button:focus {
+  outline: none;
+}
