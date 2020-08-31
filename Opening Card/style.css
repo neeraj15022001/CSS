@@ -1,0 +1,56 @@
+* {
+  padding;0;
+  margin:0;
+}
+body {
+  font-family: "poppins";
+}
+.front-face {
+  background-color: rgb(255, 226, 153);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  z-index:2
+}
+.icon > img  {
+  display: block;
+  margin: auto;
+  padding-top: 50px;
+}
+.back-face {
+  background-color:black ;
+  color:white;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  z-index: 1;
+}
+.content-back {
+  padding-top: 80px;
+  text-align: center;
+}
+  /* .front-face:hover {
+    transition: 0.5s ease-in-out;
+    top: 100px ;
+  } */
+.container:hover .back-face {
+  transition: 0.5s ease-in-out;
+  top:250px;
+}
+.container:hover .front-face {
+  transition: 0.5s ease-in-out;
+  top: 50px;
+}
+.container:not(:hover) .back-face {
+  transition: 0.5s ease-in-out;
+  top: 150px;
+}
+.container:not(:hover) .front-face {
+  transition: 0.5s ease-in-out;
+  top: 150px;
+}
