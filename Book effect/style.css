@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "poppins";
+}
+div.container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 200px;
+  left: 300px;
+}
+.back {
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  z-index: 0;
+}
+.back h2{
+  padding-top: 70px;
+}
+.front {
+  position: absolute;
+  top:0px;
+  left: 0px;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform-origin: top left;
+  transition: transform 1.5s ease-in-out;
+}
+.front h2{
+  padding-top: 80px;
+  text-align: center;
+}
+.front-face {
+  background-color: purple;
+  color: white;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  backface-visibility: hidden;
+}
+.back-face {
+  background-color: purple;
+  color: white;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  backface-visibility: hidden ;
+  transform:rotateY(180deg);
+}
+.container:hover .front{
+  transform: rotateY(180deg);
+}
