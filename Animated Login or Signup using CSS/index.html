@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-container" id="card">
+    <!-- <div class="slider"></div>-->
+    <div class="state-container">
+      <div class="login-option" onmouseover="document.getElementById('wrapper').style.transform = 'rotateY(0deg)'">
+        SIGN-IN
+      </div>
+      <div class="signup-option" onmouseover="document.getElementById('wrapper').style.transform = 'rotateY(180deg)'">
+        SIGN-UP
+      </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+      <div class="login">
+        <form>
+          <label for="username">Username</label>
+          <input type="text">
+          <label for="password">Password</label>
+          <input type="password">
+          <input type="submit" value="SIGN IN" id="sign-in-button">
+        </form>
+        <hr color="#039494">
+        <div class="forgot-password">
+          <p>Forgot Password?</p>
+        </div>
+      </div>
+  
+      <div class="signup">
+        <form>
+          <label for="username">Username</label>
+          <input type="text">
+          <label for="email">Email</label>
+          <input type="email">
+          <label for="password">Password</label>
+          <input type="password">
+          <input type="submit" value="SIGN IN" id="sign-in-button">
+        </form>
+        <hr color="#039494">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
