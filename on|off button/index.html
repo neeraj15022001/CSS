@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On | Off </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="button-container" id="button-container">
+    <div class="toggle-container" id="toggle-container">
+      <div class="toggle" id="toggle"  onclick="javascript:toggle()">
+      </div>
+    </div>
+  </div>
+  <script>
+    var toggledState = false;
+    function toggle() {
+      let x = document.getElementById("toggle").style;
+      let y = document.getElementById("button-container").style;
+      if(toggledState == false) {
+      x.left = "100%";
+      x.transform = "translateX(-100%)";
+      x.right = "0";
+      y.backgroundColor = "green";
+      toggledState = true;
+      } else {
+        x.left = "0";
+        x.transform = "translateX(0%)";
+        x.right = "100%";
+        y.backgroundColor = "red  ";
+        toggledState = false;
+      }
+    }
+  </script>
+</body>
+</html>
