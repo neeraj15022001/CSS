@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  border-radius: 50%;
+}
+.red {
+  /* border-bottom: 10px solid red; */
+  animation : rotateRed 0.6s infinite;
+}
+@keyframes rotateRed {
+    0% {
+      border-right: 10px solid blue;
+    }
+    25% {
+      border-bottom: 10px solid red;
+    }
+    50% {
+      border-left: 10px solid red;
+    }
+    75% {
+      border-top: 10px solid red;
+    }
+    100% {
+      border-right: 10px solid red;
+    }
+  }
+
+.yellow {
+  /* border-left: 10px solid yellow; */
+  animation: rotateYellow 0.6s infinite;
+}
+@keyframes rotateYellow {
+  0% {
+    border-bottom: 10px solid red;
+  }
+  25% {
+    border-left: 10px solid yellow;
+  }
+  50% {
+    border-top: 10px solid yellow;
+  }
+  75% {
+    border-right: 10px solid yellow;
+  }
+  100% {
+    border-bottom: 10px solid yellow;
+  }
+}
+.green {
+  /* border-top: 10px solid green; */
+  animation: rotateGreen 0.6s infinite;
+}
+@keyframes rotateGreen {
+  0% {
+    border-left: 10px solid yellow;
+  }
+  25% {
+    border-top: 10px solid green;
+  }
+  50% {
+    border-right: 10px solid green;
+  }
+  75% {
+    border-bottom: 10px solid green;
+  }
+  100% {
+    border-left: 10px solid green;
+  }
+}
+.blue {
+  /* border-right: 10px solid blue; */
+  animation: rotateBlue 0.6s infinite;
+}
+@keyframes rotateBlue{
+  0% {
+    border-top: 10px solid green;
+  }
+  25% {
+    border-right: 10px solid blue;
+  }
+  50% {
+    border-bottom: 10px solid blue;
+  }
+  75% {
+    border-left: 10px solid blue;
+  }
+  100% {
+    border-top: 10px solid blue;
+  }
+}
