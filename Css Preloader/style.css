@@ -1,0 +1,77 @@
+ body
+{
+    margin: 0;
+    padding: 0;
+    background: #111;
+}
+.container
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: calc(50% - 49px);
+    top: 260px;
+    border-radius: 100%;
+}
+ .load-circle
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.load-circle .load-inner
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 5px solid rgba(0,255,170,0.7);
+    border-right: none;
+    border-top: none;
+    background-clip: padding;
+    box-shadow: inset 0 0 10px rgba(0,255,170,0.15);
+}
+.load-circle:nth-of-type(0)
+{
+    transform: rotate(0deg);
+}
+.load-circle:nth-of-type(0) .load-inner
+{
+    animation: load-spin 2.3s infinite linear;
+}
+.load-circle:nth-of-type(1)
+{
+    transform: rotate(70deg);
+}
+.load-circle:nth-of-type(1) .load-inner
+{
+    animation: load-spin 2.3s infinite linear;
+}
+.load-circle:nth-of-type(2)
+{
+    transform: rotate(140deg);
+}
+.load-circle:nth-of-type(2) .load-inner
+{
+    animation: load-spin 2.3s infinite linear;
+}
+.container
+{
+    animation: load-spin 5.75s infinite linear;
+}
+@keyframes load-spin
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+ 
+
+
+
