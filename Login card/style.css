@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background:black url(background.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "poppins";
+}
+div.main-container {
+  
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border: none;
+  border-radius: 37px;
+  box-shadow: inset 0px 0px 5p 20px rgba(16, 16, 16, 0.2);
+  height: 450px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+}
+div.form-container {
+  box-sizing: border-box;
+  background-color:#E8EDF5;
+  border: none;
+  border-radius: 0px 37px 37px 0px;
+  height: 450px;
+  padding: 0px 40px;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  z-index: 10;
+}
+
+@keyframes move {
+  from{right: 0%;}
+  to{right: 100%;
+  transform: translateX(100%);border-radius: 37px 0px 0px 37px;}
+}
+@keyframes moveRight {
+  from{left: 0%;}
+  to{left: 100%;
+  transform: translateX(-100%);border-radius: 0px 37px 37px 0px;}
+}
+@keyframes moveBackFromRight {
+  from{left: 100%;
+    transform: translateX(-100%);border-radius: 0px 37px 37px 0px;}
+    to{left: 0%;}
+}
+@keyframes moveBack {
+  from{right: 100%;
+  transform: translateX(100%);border-radius: 37px 0px 0px 37px;}
+  to{right: 0%;}
+}
+.field {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 30px;
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  width:90%; 
+}
+.field:focus {
+  outline: none;
+}
+.fname {
+  top: 81px;
+}
+.email {
+  top: 170px;
+}
+.pass {
+  top:260px;
+}
+#submit-button {
+  border-radius: 50px;
+  border: none;
+  background-image: linear-gradient(to right, #6190E8, #A7BFE8);
+  color: white;
+  font-size: 20px;
+  font-weight:bold;
+  left: 50%;
+  padding: 20px 30px;
+  position: absolute;
+  top: 350px;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  width: 50%;
+}
+#submit-button:focus {
+  outline: none;
+}
+.button-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 37px 0px 0px 37px;
+  height: 450px;
+  position: relative;
+  width: 50%;
+  z-index: 9;
+  
+}
+#signIn {
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: none;
+  background-image: linear-gradient(to right, #6190E8, #A7BFE8);
+  color: white;
+  font-size: 20px;
+  font-weight:bold;
+  left: 50%;
+  padding: 20px 30px;
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+  transform: translate(-50%,-50%);
+  width: 50%;
+}
+#signIn:focus {
+  outline: none;
+}
